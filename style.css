@@ -3,18 +3,12 @@
   background-color: #ededff;
 }
 
-/* #experience {
-  background-color: #ededff;
-} */
-
 section {
   padding-top: 5rem;
 }
 
 .jumbotron a {
-  padding-left: 20px;
-}
-
-.skill {
-  padding-bottom: 100px;
+  justify-content: center;
+  padding-left: 15px;
+  box-sizing: border-box;
 }
