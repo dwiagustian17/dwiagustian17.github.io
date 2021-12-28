@@ -3,10 +3,18 @@
   background-color: #ededff;
 }
 
-#experience {
+/* #experience {
   background-color: #ededff;
-}
+} */
 
 section {
   padding-top: 5rem;
+}
+
+.jumbotron a {
+  padding-left: 20px;
+}
+
+.skill {
+  padding-bottom: 100px;
 }
