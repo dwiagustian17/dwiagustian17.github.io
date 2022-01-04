@@ -11,6 +11,9 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="logo/user.png">
@@ -18,7 +21,7 @@
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #2e55d6">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #2e55d6" data-aos="fade-down">
       <div class="container">
         <a class="navbar-brand" href="#">MY PORTFOLIO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +72,7 @@
           <div class="col-md-4">
             <p>Bachelor's degree in Informatics Engineering Univerity of Muhammadiyah Malang (GPA: 3.57) Concentration on Software Engineering and Database Administration. Looking for job oppoturnities to develop my personal skill.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 ">
             <i class="bi bi-geo-alt-fill"></i>
             <p>Sidoarjo, East Java Indonesia</p>
             <i class="bi bi-calendar-month-fill"></i>
@@ -292,6 +295,28 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Animasi -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    const progress = document.querySelectorAll('.progress-bar');
+    progress.forEach((progress, i) =>{
+    progress.dataset.aos = 'fade-right';
+    })
+
+      AOS.init({
+        once : true,
+        duration : 1000,
+      });
+    </script>
+    
+    <!-- GSAP
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+      gsap.from('.progress-bar', {duration: 1, x: -200, opacity: 0, });
+    </script> -->
+    <!-- Akhir Animasi -->
+
+    <!-- Form Contact -->
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbwiyb9hMQ1JKcNuS0hKF1dsltya8C7Uhi1zthsPyiO27HbTBwnWINMSl1MfMDpgT8q7Kg/exec'
       const form = document.forms['contact-form']
