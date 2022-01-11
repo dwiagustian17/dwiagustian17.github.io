@@ -1,7 +1,7 @@
 .jumbotron {
   padding-top: 6rem;
   padding-bottom: 10rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)), url("../../img/bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("../../img/bg.jpg");
   background-size: cover;
   color: white;
 }
