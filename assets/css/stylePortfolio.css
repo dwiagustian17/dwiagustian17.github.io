@@ -1,9 +1,17 @@
 .jumbotron {
   padding-top: 6rem;
-  background-color: #ededff;
+  padding-bottom: 10rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)), url("../../img/bg.jpg");
+  background-size: cover;
+  color: white;
 }
 
-section {
+#about,
+#certificate,
+#skill,
+#experience,
+#portfolio,
+#contact {
   padding-top: 5rem;
 }
 
